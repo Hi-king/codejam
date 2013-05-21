@@ -1,0 +1,12 @@
+         17 function calls in 136.398 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1  136.328  136.328  136.328  136.328 pro2.py:3(generate_palindrome)
+        1    0.070    0.070  136.398  136.398 pro2.py:1(<module>)
+       13    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {range}
+
+

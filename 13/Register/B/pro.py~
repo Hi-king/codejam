@@ -1,0 +1,27 @@
+import sys
+
+f_input = open(sys.argv[1])
+problems = int(f_input.readline().rstrip())
+
+
+for i in xrange(problems):
+    ## read ##
+    numrow, numcolumn = map(int, f_input.readline().rstrip().split(" "))
+    rowmap = [[map(int, f_input.readline().rstrip().split(" "))] for k in xrange(numrow) ]
+    colmap = [[line[i] for line in rowmap] for i in xrange(numcolumn)]
+
+    ## indexing ##
+    #levels = set()
+    for x,y in (a,b for a in xrange(numrow) for b in xrange(numcolumn)):
+        if max(rowmap[x]) > rowmap[x][y] and max(colmap[y]) > rowmap[x][y]:
+            print "N"
+            break
+    else:
+        print "Y"
+                
+    
+    ## solve ##
+    # for level in levels:
+    #     for node in nodes[level]:
+    #             print node
+    #             if max(rowmap)
